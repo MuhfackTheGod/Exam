@@ -1,0 +1,155 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r4p7.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Thu Jan 14 19:03:23 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160114/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user log --pretty='%H - %an, %ad : %s'
+2e0edee06caa23ff9a8539a51418b7c84c894cfc - Diallo SOULEYMANE, Thu Jan 14 19:03:16 2016 +0100 : add_prime
+854425df55992ea9411764c342960268c1262fa6 - Diallo SOULEYMANE, Thu Jan 14 18:25:53 2016 +0100 : hidenp wdmatch en vite quoi
+306a3037af0e58223c5c9325577257a1b295e618 - Diallo SOULEYMANE, Thu Jan 14 18:21:53 2016 +0100 : wdmatch
+2da3bfc469e736cc8173ac3d82919b7965d4f341 - Diallo SOULEYMANE, Thu Jan 14 18:10:02 2016 +0100 : swapbits first time
+969ccdbb6f86fac7aa1ce0e9e0a3b27287f9fa37 - Diallo SOULEYMANE, Thu Jan 14 18:06:50 2016 +0100 : ftputstr
+3d58196a3e19d6b690979767b2777dfd05d0fc6d - Diallo SOULEYMANE, Thu Jan 14 18:03:33 2016 +0100 : affz
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1494 Jan 14 19:03 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 add_prime_sum
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 aff_z
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 hidenp
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 swap_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:03 wdmatch
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/add_prime_sum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  784 Jan 14 19:03 add_prime_sum.c
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  109 Jan 14 19:03 aff_z.c
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  128 Jan 14 19:03 ft_putstr.c
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/hidenp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  496 Jan 14 19:03 hidenp.c
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 14 19:03 swap_bits.c
+
+/var/folders/l4/dv9gbl_d0sn89jq56rxz_bzm0000gq/T/tmpqxjAb9/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  468 Jan 14 19:03 wdmatch.c
+ 
+= add_prime_sum ================================================================
+$> clang -Wextra -Wall -Werror add_prime_sum.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./871hicp4krbue3aytvtkr9tv 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./hv75jtf8y6g1m2k4y0vnbmrc "17" "23" "42"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./j6yb838doz4qotszr9b9oflt "-96"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./zwacqecbmhxh6c1rk9b1k3i7 "-1894"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./gx9wgeyovstg08wv5fopa2ph "39"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./kw50rfxonuf9fhr17hfstbw3 "738"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./81h3p9ppexsv65gxi8sfou4w "385"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./o393z8xv3yvw33ie0hqq0z8o "1811"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./wl0codgge9wv7larluoypk43 "1629"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./o8y64upxg387qgbg4oktab99 "339"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./am9cfhxklukmekmz8g3q767s "1365"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./bkw1015u03a3865hkyxjx209 "1451"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./nd5w6hpg9wgb553clpilncm3 "593"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./7pjpt03nowoy2onefbgv2ms2 "1139"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./5d3a1xy4lkk59zq8z8dh9hz9 "1399"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./c0tuf6kd2dum46tv9ntxg19u "1103"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./6i055onzkuij3uegptoptish "585"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

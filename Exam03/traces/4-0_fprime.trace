@@ -1,0 +1,79 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r6p5.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Thu Jan 14 19:30:30 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160114/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user log --pretty='%H - %an, %ad : %s'
+c2b5a7f433f6da8194d8f21f45a9fb9d8dab9c72 - Diallo SOULEYMANE, Thu Jan 14 19:30:22 2016 +0100 : fprime
+2e0edee06caa23ff9a8539a51418b7c84c894cfc - Diallo SOULEYMANE, Thu Jan 14 19:03:16 2016 +0100 : add_prime
+854425df55992ea9411764c342960268c1262fa6 - Diallo SOULEYMANE, Thu Jan 14 18:25:53 2016 +0100 : hidenp wdmatch en vite quoi
+306a3037af0e58223c5c9325577257a1b295e618 - Diallo SOULEYMANE, Thu Jan 14 18:21:53 2016 +0100 : wdmatch
+2da3bfc469e736cc8173ac3d82919b7965d4f341 - Diallo SOULEYMANE, Thu Jan 14 18:10:02 2016 +0100 : swapbits first time
+969ccdbb6f86fac7aa1ce0e9e0a3b27287f9fa37 - Diallo SOULEYMANE, Thu Jan 14 18:06:50 2016 +0100 : ftputstr
+3d58196a3e19d6b690979767b2777dfd05d0fc6d - Diallo SOULEYMANE, Thu Jan 14 18:03:33 2016 +0100 : affz
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1764 Jan 14 19:30 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 add_prime_sum
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 aff_z
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 fprime
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 hidenp
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 swap_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 14 19:30 wdmatch
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/add_prime_sum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  784 Jan 14 19:30 add_prime_sum.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  109 Jan 14 19:30 aff_z.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/fprime:
+total 8
+-rw-r--r--  1 deepthought  deepthought  861 Jan 14 19:30 fprime.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  128 Jan 14 19:30 ft_putstr.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/hidenp:
+total 8
+-rw-r--r--  1 deepthought  deepthought  496 Jan 14 19:30 hidenp.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 14 19:30 swap_bits.c
+
+/var/folders/z8/jh8hx5r54_z1jf3_dbx0g5tm0000gq/T/tmpG7yLqD/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  468 Jan 14 19:30 wdmatch.c
+ 
+= fprime =======================================================================
+$> clang -Wextra -Wall -Werror fprime.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./4q5ygcxz2fisao7lttrkwoan 424325
+Command './4q5ygcxz2fisao7lttrkwoan 424325' timed out after 10 seconds
+Grade: 0
+
+= Final grade: 0 ===============================================================

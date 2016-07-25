@@ -1,0 +1,80 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r1p6.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Tue Jan 12 12:20:23 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160112/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user log --pretty='%H - %an, %ad : %s'
+09ead8c6f66278108ca0ce81f9216e593c7ecf80 - Diallo SOULEYMANE, Tue Jan 12 12:20:09 2016 +0100 : fprime
+a6678848c0f337183336d59d43d09e1f8d13082b - Diallo SOULEYMANE, Tue Jan 12 11:09:27 2016 +0100 : itoa
+4ee7aafa637a65ae7dc3fe9ef7f2f7a961eba335 - Diallo SOULEYMANE, Tue Jan 12 10:40:10 2016 +0100 : ft_rrrange
+f2dce86ab073f732c5fb2b60ff56a732d93f5412 - Diallo SOULEYMANE, Tue Jan 12 10:25:54 2016 +0100 : max
+8e7e1935c8c7272e4b8941d2acb887522deb8f04 - Diallo SOULEYMANE, Tue Jan 12 10:12:31 2016 +0100 : first_word
+b5b4e6616fe9355bd02412cce17b41756e1a049e - Diallo SOULEYMANE, Tue Jan 12 10:05:02 2016 +0100 : maff revalpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1484 Jan 12 12:20 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 first_word
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 fprime
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 ft_itoa
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 ft_rrange
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Jan 12 12:20 max
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/first_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  318 Jan 12 12:20 first_word.c
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/fprime:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1813 Jan 12 12:20 fprime.c
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/ft_itoa:
+total 8
+-rw-r--r--  1 deepthought  deepthought  424 Jan 12 12:20 ft_itoa.c
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/ft_rrange:
+total 8
+-rw-r--r--  1 deepthought  deepthought  486 Jan 12 12:20 ft_rrange.c
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 12 12:20 maff_revalpha.c
+
+/var/folders/mm/c1vq5m9x0n1fhm81my6zcyf80000gq/T/tmpNB2hlS/user/max:
+total 8
+-rw-r--r--  1 deepthought  deepthought  160 Jan 12 12:20 max.c
+ 
+= fprime =======================================================================
+$> clang -Wextra -Wall -Werror fprime.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./q84ysu2pgbeb38far5z8uiwb 424325
+$> diff -U 3 user_output_test1 test1.output | cat -e
+--- user_output_test1	2016-01-12 12:20:24.000000000 +0100$
++++ test1.output	2016-01-12 12:20:24.000000000 +0100$
+@@ -1 +1 @@$
+-5*5*5*11$
++5*5*11*1543$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

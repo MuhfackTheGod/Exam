@@ -1,0 +1,45 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r2p7.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Tue Jan 12 10:05:09 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160112/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/r5/h621bnls5t7g0dr411j5fb5m0000gq/T/tmpqqv5yo/user log --pretty='%H - %an, %ad : %s'
+b5b4e6616fe9355bd02412cce17b41756e1a049e - Diallo SOULEYMANE, Tue Jan 12 10:05:02 2016 +0100 : maff revalpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/r5/h621bnls5t7g0dr411j5fb5m0000gq/T/tmpqqv5yo/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  237 Jan 12 10:05 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 12 10:05 maff_revalpha
+
+/var/folders/r5/h621bnls5t7g0dr411j5fb5m0000gq/T/tmpqqv5yo/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 12 10:05 maff_revalpha.c
+ 
+= maff_revalpha ================================================================
+$> clang -Wextra -Wall -Werror maff_revalpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./s10z85vn2rnlowlhm0ld1c0n
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

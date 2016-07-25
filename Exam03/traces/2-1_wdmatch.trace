@@ -1,0 +1,93 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r9p19.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Thu Jan 14 18:21:59 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160114/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user log --pretty='%H - %an, %ad : %s'
+306a3037af0e58223c5c9325577257a1b295e618 - Diallo SOULEYMANE, Thu Jan 14 18:21:53 2016 +0100 : wdmatch
+2da3bfc469e736cc8173ac3d82919b7965d4f341 - Diallo SOULEYMANE, Thu Jan 14 18:10:02 2016 +0100 : swapbits first time
+969ccdbb6f86fac7aa1ce0e9e0a3b27287f9fa37 - Diallo SOULEYMANE, Thu Jan 14 18:06:50 2016 +0100 : ftputstr
+3d58196a3e19d6b690979767b2777dfd05d0fc6d - Diallo SOULEYMANE, Thu Jan 14 18:03:33 2016 +0100 : affz
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  941 Jan 14 18:21 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 14 18:21 aff_z
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 14 18:21 ft_putstr
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 14 18:21 swap_bits
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 14 18:21 wdmatch
+
+/var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  109 Jan 14 18:21 aff_z.c
+
+/var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user/ft_putstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  128 Jan 14 18:21 ft_putstr.c
+
+/var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user/swap_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 14 18:21 swap_bits.c
+
+/var/folders/dd/gxc_s_xs1v12qx0dk0tlctkc0000gq/T/tmp27aqY5/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  468 Jan 14 18:21 wdmatch.c
+ 
+= wdmatch ======================================================================
+$> clang -Wextra -Wall -Werror wdmatch.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./er00bdpd2xqf1t6s1klfxpmd "faya" "fgvvfdxcacpolhyghbreda"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./o4ckocmjx8ucwir6vthjvjw9 "faya" "fgvvfdxcacpolhyghbred"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./997gi4qxz3yf0ahvnh43c8tg "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./r5h534mi3zze8wk3f2yyvhez "error" "rrerrrfiiljdfxjyuifrrvcoojh"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./a0edbeylb2um6o7g8rm3g9s2 "... un dernier pour la route" "... UN DERNIER POUR LA ROUTE"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./jpqkzkuzx3btp63057leyakb "oui" "qowueir"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./e0j73qymmq1k09h3feheuxw9 ""
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

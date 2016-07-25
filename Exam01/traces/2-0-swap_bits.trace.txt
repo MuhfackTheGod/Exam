@@ -1,0 +1,45 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r6p8.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Thu Jan  7 18:39:13 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160107/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/9q/2pfgy4nj5rn9vsqkt0fg26200000gq/T/tmpQLG0_Q/user log --pretty='%H - %an, %ad : %s'
+6b388780f3983139e99eafacbecbd405c96988ee - Diallo SOULEYMANE, Thu Jan 7 18:33:34 2016 +0100 : ulstr
+4474683d98a56450849c1733489e1ee5d3eb6f97 - Diallo SOULEYMANE, Thu Jan 7 18:09:24 2016 +0100 : lets go
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/9q/2pfgy4nj5rn9vsqkt0fg26200000gq/T/tmpQLG0_Q/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  459 Jan  7 18:39 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan  7 18:39 aff_z
+drwxr-xr-x  3 deepthought  deepthought  102 Jan  7 18:39 ulstr
+
+/var/folders/9q/2pfgy4nj5rn9vsqkt0fg26200000gq/T/tmpQLG0_Q/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  126 Jan  7 18:39 aff_z.c
+
+/var/folders/9q/2pfgy4nj5rn9vsqkt0fg26200000gq/T/tmpQLG0_Q/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  382 Jan  7 18:39 ulstr.c
+ 
+= swap_bits ====================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

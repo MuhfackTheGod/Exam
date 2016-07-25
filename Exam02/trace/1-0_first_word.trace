@@ -1,0 +1,81 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e2r3p10.42.fr
+Darwin 15.2.0 x86_64
+$> date
+Tue Jan 12 10:12:40 CET 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+$> clang --version
+Apple LLVM version 7.0.2 (clang-700.1.81)
+Target: x86_64-apple-darwin15.2.0
+Thread model: posix
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/piscine-c-a-distance-c-exam-training/exam_20160112/dsouleym
+
+= Git history ==================================================================
+$> git -C /var/folders/pg/hy737qn563jch4byzw8q1wpw0000gq/T/tmpc8ZboR/user log --pretty='%H - %an, %ad : %s'
+8e7e1935c8c7272e4b8941d2acb887522deb8f04 - Diallo SOULEYMANE, Tue Jan 12 10:12:31 2016 +0100 : first_word
+b5b4e6616fe9355bd02412cce17b41756e1a049e - Diallo SOULEYMANE, Tue Jan 12 10:05:02 2016 +0100 : maff revalpha
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/pg/hy737qn563jch4byzw8q1wpw0000gq/T/tmpc8ZboR/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  482 Jan 12 10:12 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 12 10:12 first_word
+drwxr-xr-x  3 deepthought  deepthought  102 Jan 12 10:12 maff_revalpha
+
+/var/folders/pg/hy737qn563jch4byzw8q1wpw0000gq/T/tmpc8ZboR/user/first_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  318 Jan 12 10:12 first_word.c
+
+/var/folders/pg/hy737qn563jch4byzw8q1wpw0000gq/T/tmpc8ZboR/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  87 Jan 12 10:12 maff_revalpha.c
+ 
+= first_word ===================================================================
+$> clang -Wextra -Wall -Werror first_word.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./umjtijpi69jjh8td1y33bgm5 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./qoo9o8wvssz74zeg9lboecf0 "premier param" "deuxieme param"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./nj7uuiwl9wad24f4xljid5l4 "rien ne sert de courir il faut partir a point"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./lgnoe4mjt0nncrrn0a7mztqb "  et le trim, c'est pour les andouilles en ski  "
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./mbzeo3vk4tkevhkdvdwdlo81 "..."
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./35dayhqsrrcogk8kovd8uhbt ""
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./z9ba5ixct281ohjbqdty21zj "             "
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
